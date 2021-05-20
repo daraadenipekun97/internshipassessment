@@ -39,4 +39,34 @@ marquee h3{
 }
 ul{
     display:none;
+    font-size:smaller;
+    font-weight: 200;
+}
+
+   
+.list_items{
+    list-style: none;
+    
+
+}
+
+.fetch{
+    width:20%;
+  
+    color: brown;
+    position: relative;
+    top: 100px;
+    left:400px;
+    animation-name:FadeInOut ;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes FadeInOut{
+    0%{
+        opacity:1;
+    }
+    14%{
+        opacity:0;
+    }
+
 }

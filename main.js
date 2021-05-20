@@ -1,3 +1,16 @@
+
+//fetching data text
+
+function hidetext(){
+    document.querySelector(".fetch").style.display = "none";
+}
+setTimeout( "hidetext()", 1000);
+
+
+
+
+
+
 // fetching the API using fetch
 
 
@@ -26,6 +39,8 @@ const getData = () =>{
         }).join("")
             console.log(render);
         
+
+            //getting element and firing eventlisteners
             document.getElementById("userdetails").innerHTML = render;
 
 
