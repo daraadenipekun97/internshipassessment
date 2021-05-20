@@ -6,8 +6,7 @@
 }
 #container{
     width:100%;
-    border:solid;
-   
+  
     
     
 }
@@ -26,12 +25,18 @@ marquee h3{
     color: brown;
     font-weight: 500;
 }
-.name{
-    width:33%;
+.details{
+    width:50%;
     margin:auto;
-    height:50px;
-    background-color: #ddd;
-    border: solid;
+    height:30vh;
+    border:1px solid #ddd ;
+    border-top-color: white;
+
+    display: flex;
+   justify-content: space-evenly;
+   padding: 2rem;
     
-    
+}
+ul{
+    display:none;
 }
