@@ -18,7 +18,7 @@ const getData = () =>{
     fetch("https://reqres.in/api/users")
     .then(res => res.json())
     .then(users => {
-        console.log(users.data[0].id);
+        console.log(users.data);
        
         const render = users.data.map(user =>{
                 return `<div class = "details">
@@ -48,25 +48,26 @@ const getData = () =>{
             let listEl = document.querySelectorAll(".list");
             console.log(listEl.length);
             
+            
             for (let i = 0; i < nameEl.length; i++) {
                 nameEl[i].addEventListener("click", action);
-
-                
-                
+   
             }
 
-           
 
-                function action(e){
-                       this.style.color = "brown";
-                       this.firstElementChild.style.display = "block"
-                    
-
-                   
-                           
+               
+                function action(){
+                        this.classList.toggle("new");
+                       this.firstElementChild.classList.toggle("show"); 
                       
+                       
+
+
+                         
 
                 }
+               
+               
             
     })
     .catch(error => {

@@ -42,6 +42,10 @@ ul{
     font-size:smaller;
     font-weight: 200;
 }
+.name:hover{
+
+    color:brown;
+}
 
    
 .list_items{
@@ -70,3 +74,11 @@ ul{
     }
 
 }
+
+
+
+.new:nth-child(2) > ul{
+    display:block !important; 
+}
+
+
